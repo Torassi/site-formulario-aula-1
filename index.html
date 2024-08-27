@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Formulario</title>
     </head>
 
     <body>
-        <img src="images.png"/>
+       <main>
+            <article>
+                <p>
+                    <h1>
+                    Futebol
+                    </h1>
+                </p>
+            </article>
         <h1>
-            Formulario tes
+            Futebol
+        </h1>
+        <img src="img/images.png">
+        <h1>
+            Formulario
         </h1>
         <form action="/action_page.php">
-            <label for="fname"
-        </form>
-        
+            <label for="fname">
+                Primeiro nome
+            </label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+
+            <label for="lname">
+                Segundo nome
+            </label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <p>
+                <label for="aniversario">
+                    Data de Nascimento
+                </label><br>
+                <input type="date" id="aniversario" name="data"><br>
+                
+                <p>
+                    <label for="time"> Qual o seu time de coração?
+                    </label><br>
+                    <input type="text" name="time" id="time"
+                    list="listatimes">
+                    <datalist id="listatimes">
+                        <option>Flamengo</option>
+                        <option>Grêmio</option>
+                        <option>Internacional</option>
+                        <option>Criciuma</option>
+                        <option>Palmeiras</option>
+                        <option>Corinthians</option>
+                    </datalist>
+                    <p>
+                        <label for="posição"> Qual posição você prefere?
+                        </label><br>
+                <select id="posição" name="posição">
+                    <optgroup label="Defensor">
+                        <option>Goleiro</option>
+                        <option>Zagueiro</option>
+                        <option>Lateral</option>
+                    </optgroup>
+                    <optgroup label="Meio de Campo">
+                        <option>Volante</option>
+                        <option>Meia de ligação</option>
+                        <option>Armador</option>
+                        <option>Meia atacante</option>
+                    </optgroup>
+                    <optgroup label="Atacante">
+                        <option>Ponta</option>
+                        <option>Segundo atacante</option>
+                        <option>Falso 9</option>
+                        <option>Centroavante</option>
+                    </optgroup>
+                </select>
+
+            </form>
+        </main>
     </body>
 </html>
